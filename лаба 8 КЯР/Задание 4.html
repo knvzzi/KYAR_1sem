@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <style>
+            .fit, .pim, .xtit, .bstu{
+                display: inline;
+            }
+            .one{
+                display: inline-block;
+                height: 20px;
+                width: 135px;
+                margin: 5px;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+                border: 1px solid black;
+            }
+            .kaf li{
+                margin: 0;
+                display: block;
+                height: 25px;
+                width: 135px;
+                text-align: center;
+                position: relative;
+                list-style-type: none;
+                border: 1px solid black;
+            }
+            .nav li .one{
+                background: url(roll1.jpg) no-repeat 0 0;
+                background-size: 20px;
+            }
+            .nav .fit .one:hover{
+                background-position: 0 -20px;
+            }
+            .nav .xtit .one:hover{
+                background-position: 0 -40px;
+            }
+            .nav .pim .one:hover{
+                background-position: 0 -60px;
+            }
+            nav>.menu>.fit{
+                width: 180px;
+                position: relative;
+            }
+            nav .kaf{
+                position: absolute;
+                display: none;
+                
+                transform:translate(116px, -6px);
+            }
+            nav .fit:hover .kaf{
+                display: block;
+            }
+            .kaf a{
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+        <ol id = "menu">
+            <li class="bstu"><a href = "#" class="one">БГТУ</a></li>
+            <li class="fit"><a href = "https://it.belstu.by/" class="one">ФИТ</a>
+                <ol class="kaf">
+                    <li><a href = "https://isit.belstu.by/">Кафедра ИСиТ</a></li>
+                    <li><a href = "https://www.belstu.by/fakultety/fit/ivd">Кафедра ИиВД</a></li>
+                    <li><a href = "https://www.belstu.by/fakultety/fit/pi">Кафедра ПИ</a></li>
+                </ol>
+            </li>
+            <li class="xtit"><a id = "xtit" href = "#" class="one">ХТиТ</a></li>
+            <li class="pim"><a id = "pim" href = "#" class="one">ПиМ</a></li>         
+        </ol>
+    </nav>
+        
+    </body>
+</html>

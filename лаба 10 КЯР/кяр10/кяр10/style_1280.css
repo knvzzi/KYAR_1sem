@@ -1,0 +1,10 @@
+@media screen and (max-width: 1280px){
+    a{
+    color: green;
+    }
+
+    img{
+        width: 100%;
+        max-width: 100%;
+    }
+}

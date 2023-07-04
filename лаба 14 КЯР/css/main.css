@@ -1,0 +1,66 @@
+body {
+  background-color: #f8fbff;
+}
+body h1 {
+  font-family: "MATURA MT";
+  color: #8B008B;
+  font-size: 50px;
+  text-align: center;
+}
+body h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #a16fab;
+  font-size: 30px;
+  text-align: center;
+}
+body h3 {
+  font-family: "MATURA MT";
+  color: #8B008B;
+  font-size: 30px;
+  text-align: center;
+}
+body span {
+  color: black;
+  font-style: italic;
+}
+body .p1 {
+  color: #7d027d;
+  text-align: justify;
+  font-family: Arial;
+  font-size: 16px;
+  background-color: hsla(291deg, 20%, 81%, 0.705);
+}
+body .p2 {
+  text-align: justify;
+  color: #593d59;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+body .p3 {
+  color: #7e6190;
+  text-align: justify;
+  font-family: "BRUSH SCRIPT MT";
+  font-size: 26px;
+}
+body ol li {
+  color: #593d59;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+body ul li {
+  color: #8b628b;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+body table {
+  width: 1000;
+  height: 300;
+  text-align: center;
+}
+body tr, body td, body th {
+  border: 1px solid #593d59;
+}
+
+a:visited {
+  fill: #c460d8;
+}

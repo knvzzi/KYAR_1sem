@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+        .grid {
+ display:grid;
+ grid-template-areas: 
+ "x y w"
+ "x2 y2 w2"
+ "x3 y3 w3";
+ grid-template-columns: 
+ 200px 200px 200px;
+ grid-template-rows: 
+ 200px 200px 200px;
+ grid-gap: 5px;
+ }
+ .two{
+    background-color: brown;
+ }
+ p{
+    color:blue;
+ }
+ .grid div{
+    border: 1px solid black;
+ }
+ </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div style="grid-area: x;"><p>Грид представляет собой пересекающийся набор горизонтальных и вертикальных линий, 
+                образующих колонки и строки. Элементы могут быть помещены в грид в пределах линий
+                этих колонок и строк.</p></div>
+            <div style="grid-area: y;">2</div>
+            <div style="grid-area: w;">3</div>
+            <div class="two" style="grid-area: x2;">4</div>
+            <div class="two" style="grid-area: y2;">5</div>
+            <div class="two" style="grid-area: w2;">6</div>
+            <div style="grid-area: x3;">7</div>
+            <div style="grid-area: y3;">8</div>
+            <div style="grid-area: w3;">9</div>
+            </div>
+    </body>

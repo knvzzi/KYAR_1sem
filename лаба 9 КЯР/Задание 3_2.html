@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+        .grid {
+            display:grid;
+            grid-template-areas: 
+            "a a a"
+            "b c d"
+            "e e e";
+            grid-template-columns: 100px 450px 150px;
+			grid-template-rows: 40px 500px 40px;
+			grid-gap: 8px;
+            margin-left: 270px;
+            }
+        div[style*="grid-area"]{
+            background-color: rgb(190, 190, 190);
+            text-align: justify;
+            text-indent:10px;
+            font-size: 16px;
+        }
+        .nav ul {
+            margin:0;
+            padding:0;
+            list-style-type:none;
+        }
+        .nav>ul>li {
+            width:98px;
+            position: relative;
+        }
+        .nav li .tr {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -1px;
+        }
+        .nav li:hover .tr{
+            display: block;
+        }
+        .nav li a {
+            display: block;
+            background: #e5e5e5;
+            border: 1px solid black;
+            padding: 3px;
+            text-decoration: none;
+            color:black;
+        }
+        li{
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .nav li li {
+            width: 100px;
+        }
+        .one{
+            background-color: rgb(214, 214, 214);
+            border: 1px solid rgb(58, 58, 58);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div style="grid-area: a;">
+                Грид представляет собой пересекающийся набор горизонтальных и вертикальных линий, 
+                образующих колонки и строки. Элементы могут быть помещены в грид в пределах линий
+                этих колонок и строк.
+            </div>
+            <div style="grid-area: b;">
+                <nav class="nav">
+                    <ul>
+                        <li class="one">
+                            Меню
+                            <ul class="tr">
+                                <li class="two"><a href="https://www.wisdomweb.ru/CSS3/#:~:text=CSS3%20-%20это%20новый%20стандарт,счет%20использования%20новых%20свойств%20оформления">CSS3</a></li>
+                                <li class="two"><a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML</a></li>
+                                <li class="two"><a href="https://medium.com/@stasonmars/вёрстка-на-grid-в-css-полное-руководство-и-справочник-220508316f8b">Grid-верстка</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div style="grid-area: c;">
+                <p>
+                    Вы можете размещать элементы в заданном месте на гриде используя номера 
+                строк, имена или путём привязки к области грида. Грид также содержит алгоритм управления размещением элементов,
+                не имеющих явной позиции на гриде.
+                </p>
+                <p>
+                    Вы можете определить явную сетку с помощью грид-раскладки.
+                Cпецификация грид-раскладки достаточно гибкая, чтобы добавить при необходимости дополнительные
+                строки и колонки. Также в нее включены такие возможности как, например, добавление «стольких колонок, 
+                сколько будет помещено в контейнер».
+                </p>
+                <p>
+                    Грид содержит механизм выравнивания, таким образом мы можем контролировать, как элементы выравниваются после размещения 
+                    в области сетки и как выравнивается вся сетка.
+                </p>
+            </div>
+            <div style="grid-area: d;">
+                <p>
+                    В ячейку или область грида может быть помещено несколько элементов; эти элементы могут частично перекрывать друг друга. Такое наложение можно контролировать с помощью свойства z-index.
+                </p>
+                <p>
+                    Грид – это мощная спецификация, и в сочетании с другими частями CSS, такими как flexbox, поможет вам создать макеты, которые ранее невозможно было построить в CSS. Все начинается с создания сетки в вашем грид-контейнере.
+                </p>
+            </div>
+            <div style="grid-area: e;">
+                CSS Grid — это лучшая адаптивная верстка HTML-макетов. По крайней мере, она реально претендует на это звание, так как позволяет довольно легко и быстро построить адаптивный макет сайта.
+            </div>
+        </div>
+    </body>
+</html>

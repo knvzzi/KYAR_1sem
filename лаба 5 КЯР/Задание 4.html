@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en, ru">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        
+        <div class="forma">
+            <h1>Регистрация постоянного клиента</h1>
+            <section>
+                <label for="fam" class="userInfo">Фамилия:</label>
+                <input type="text" placeholder="Обязательно заполнить" class="userInput" id="fam">
+            </section>
+            <section>
+                <label for="im" class="userInfo"> Имя:</label>
+                <input  type="text" placeholder="Обязательно заполнить" class="userInput" id="im">
+            </section>
+            <section>
+                <label for="ot" class="userInfo">Отчество:</label>
+                <input  type="text" placeholder="Обязательно заполнить"  class="userInput" id="ot">
+            </section>
+            <section>
+                <label for="age" class="userInfo">Ваш возраст:</label>
+                <input  type="text" class="userInput" id="age">
+            </section>
+            <section>
+                <label for="pol" class="userInfo">Пол:</label>
+                <div id="pol">
+                    <input type="checkbox">
+                    <label style="color: aliceblue; font-size: 0.7em;">мужской</label>
+                    <input type="checkbox">
+                    <label style="color: aliceblue; font-size: 0.7em;">женский</label>
+                </div>
+            </section>
+            <section>
+                <label for="eml" class="userInfo">Email:</label>
+                <input type="email" class="userInput" id="eml">
+            </section>
+            <section>
+                <label for="str" class="userInfo">Страна проживания:</label>
+                <input type="text" class="userInput" id="str">
+            </section>
+            <section>
+                <label class="userInfo">Откуда вы узнали о нас?</label>
+                <div>
+                    <select >
+                        <optgroup>
+                            <option>Выберите вариант</option>
+                            <option >От друга</option>
+                            <option >Случайно</option>
+                        </optgroup>
+                    </select>  
+                </div>
+            </section>
+            <section>
+                <label for="date" class="userInfo">Дата заполнения</label>
+                <input type="date" id="date" >
+            </section>
+            <section class="buttons">
+                <button>Регистрация</button>
+                <button>Отмена</button>
+            </section>
+        </div>
+    </form>
+</body>
+</html>

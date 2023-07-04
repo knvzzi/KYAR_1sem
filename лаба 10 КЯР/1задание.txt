@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            .container{
+                display: flex;
+                flex-flow: row wrap;
+                align-content: space-between;
+                align-items: flex-start;
+                justify-content: center;
+            }
+            div{
+                
+            }
+            .zag{
+               border: 1px solid black;
+               flex-grow: 2;
+               align-self: flex-end;
+               text-align: center;
+               font-size: 20px;
+               height: 25px;
+            }
+            .div1{
+                border: 1px solid black;
+                flex-grow:1;
+                flex-basis:20%;
+                margin-top: 10px;
+                margin-right:10px;
+                min-height: 425px;
+            }
+            .div2{
+                border: 1px solid black;
+                flex-grow:1.5;
+                flex-basis:20%;
+                margin:10px;
+                min-height: 425px;
+            }
+            .div3{
+                border: 1px solid black;
+                flex-grow:1;
+                flex-basis:20%;
+                margin:10px 0px 0px 10px;
+                min-height: 425px;
+            }
+            .break{
+                flex-basis:100%;
+                width: 20px;
+                height: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="zag">Flexbox-верстка</div>
+            <div class="break"></div>
+                <div class="div1">Ячейка 1</div>
+                
+                <div class="div2">
+                    <p>Flexbox-верстка — разметка макетов веб-страниц, которая позволяет 
+                    автоматически настраивать ширину элементов, находящихся внутри flex контейнера. Для применения данного способа разметки следует учитывать 
+                    разделение применяемых свойств на свойства flex-контейнера и свойства 
+                    flex-элемента.</p>
+                    <p>С помощью display: flex; осуществляется преобразование HTML элемента в flex-контейнер, а элементы находящийся внутри него в flex элементы. По умолчанию flex-элементы помещаются друг за другом в одной 
+                    строке. Свойство flex-flow позволяет выбрать направление отображения 
+                    элементов в контейнере, а также указать их перенос на следующую строку. 
+                    Первое значение определяет направление, а второе перенос на следующую 
+                    строку.</p>
+                    <p>Свойство flex-flow является сокращенной запись и содержит значения 
+                    свойств flex-direction и flex-wrap. Flex-элементы могут размещаться в строке 
+                    (значение row) или в колонке (значение column). Перенос элементов 
+                    осуществляется с помощью значения wrap.</p>
+                    </div>
+                
+                <div class="div3">Ячейка 1</div>        
+        </div>            
+    </body>
+</html>

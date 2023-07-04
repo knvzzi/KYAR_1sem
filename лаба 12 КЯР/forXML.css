@@ -1,0 +1,23 @@
+musics{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#584f42;
+    display:table;
+    border-collapse:collapse;
+    margin:15px;
+}
+music, head{
+    display:table-row;
+}
+ntitle, nauthor{
+    display: table-cell;
+    border:2px dashed #a08f77;
+    padding:10px;
+    text-align:center;
+    background-color: bisque;
+}
+title, author{
+    display: table-cell;
+    border:2px dashed #a08f77;
+    padding: 10px;
+    background-color: rgba(255, 228, 196, 0.235);
+}

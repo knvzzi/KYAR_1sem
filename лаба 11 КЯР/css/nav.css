@@ -1,0 +1,29 @@
+label {
+  align-self: center;
+}
+label img {
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+}
+ul li {
+  list-style-type: none;
+  padding: 10px;
+  margin-left: 25px;
+  font-size: 110%;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(42, 47, 46);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

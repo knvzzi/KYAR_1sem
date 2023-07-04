@@ -1,0 +1,25 @@
+@mixin flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+@mixin flex2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+%border{
+    border: 1px solid rgb(207, 205, 196);
+}
+@mixin asid-color($flex-basis){
+    @if($flex-basis > 10%)
+    {
+        background-color:rgba(177, 192, 187, 0.333);
+    }
+    @else{
+        background-color:black;
+    }
+}
+$value: text_size();
+$green:green;
+$other_green:rgb(87, 145, 87);

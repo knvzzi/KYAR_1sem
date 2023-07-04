@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .fit, .pim, .xtit, .bstu{
+                display: inline;
+            }
+            a{
+                display:inline-block;
+                padding: 10px;
+                margin: 5px;
+                border: 1px solid black;
+                height: 20px;
+                width: 40px;
+                color: black;
+                text-decoration: none;
+            }
+            .kaf li{
+                list-style-type: none;
+            }
+            nav>.menu>.fit {
+                width: 180px;
+                position: relative;
+            }
+            nav .kaf {
+                position:absolute;
+                display: none;
+                
+                transform:translate(36px, -10px);
+            }
+            nav .fit:hover .kaf{
+                display: block;
+                height: 20px;
+                width: 40px;
+            }
+        </style>
+    </head>
+<body>
+    <nav class="nav">
+    <ol id = "menu">
+        <li class="bstu"><a href = "#" class="one">один</a></li>
+        <li class="fit"><a href = "https://it.belstu.by/" class="one">два</a>
+            <ol class="kaf">
+                <li><a href = "#">2.1</a></li>
+                <li><a href = "#">2.2</a></li>
+                <li><a href = "#">2.3</a></li>
+            </ol>
+        </li>
+        <li class="xtit"><a id = "xtit" href = "#" class="one">три</a></li>
+        <li class="pim"><a id = "pim" href = "#" class="one">четыре</a></li>         
+    </ol>
+</nav>
+    
+</body>
+</html>

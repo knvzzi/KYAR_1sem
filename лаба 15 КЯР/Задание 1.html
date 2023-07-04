@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Чай</title>
+        <style>
+            body{
+                background-image: url(фон.jpg);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            figure{
+                display:inline-block;
+                margin: 15px 15px 15px 50px;
+            }
+            figcaption{
+                text-align: center;
+                color: rgb(69, 51, 23);
+            }
+            label, figcaption{
+                font-size: 17px;
+            }
+            img{
+                width: 220px;
+                height: 140px;
+                border-radius: 15px;
+            }
+            h1{
+                text-align: center;
+                color: rgb(69, 51, 23);
+            }
+            .userInfo {
+                display: inline-block;
+                width: 180px;
+                text-align: start;
+                margin-right: 15px;
+                color: rgb(69, 51, 23);
+            }
+            .userInput {
+                background-color: rgba(255, 255, 255, 0.5);
+                border-style: hidden;
+                border-radius: 5px;
+            }
+
+            section {
+                display: flex;
+                padding-bottom: 15px;
+                justify-content: center;
+            }
+            .forma {
+                width: fit-content;
+                padding: 15px;
+                background-color: rgba(212, 195, 175, 0.527);
+                border: 1px dashed rgba(105, 68, 40, 0.178); 
+                border-radius: 30px;
+            }
+            footer{
+                font-size: 20px;
+                padding-left: 5%;
+                color: rgb(69, 51, 23);
+                margin: 20px;
+            }
+            form{
+                margin-left: 30%;
+            }
+            #butt, #butt1{
+                margin: 5px;
+                padding: 4px;
+                border-radius: 5px;
+                background-color: rgba(255, 247, 238, 0.604);
+                border: 0px solid rgba(73, 55, 36, 0.392);
+            }
+        </style>
+    <head>
+        <body>
+            <h1>Фотогалерея</h1>
+            <figure id="img1">
+                    <img src = "папка для фото/1.jpg"/>
+                    <figcaption id="text">Чёрный чай</figcaption>
+            </figure>
+             <figure >
+                    <img id="img2" src = "папка для фото/2.jpg"/>
+                    <figcaption>Зелёный чай</figcaption>
+            </figure>
+             <figure id="img3">
+                    <img src = "папка для фото/3.jpg"/>
+                    <figcaption>Красный чай</figcaption>
+            </figure>
+             <figure id="img4">
+                    <img src = "папка для фото/4.jpg"/>
+                    <figcaption>Матча</figcaption>
+            </figure>
+        <form>
+            <div class="forma">
+                <h1>Регистрация постоянного клиента</h1>
+                <section>
+                    <label for="fam" class="userInfo">Фамилия:</label>
+                    <input type="text" placeholder="Обязательно заполнить" class="userInput" id="fam">
+                </section>
+                <section>
+                    <label for="im" class="userInfo">Имя:</label>
+                    <input  type="text" placeholder="Обязательно заполнить" class="userInput" id="im">
+                </section>
+                <section>
+                    <label for="str" class="userInfo">Страна проживания:</label>
+                    <input type="text" class="userInput" id="str">
+                </section>
+                <section>
+                    <label for="pol" class="userInfo">Пол:</label>
+                    <div id="pol">
+                        <label style="font-size: 0.9em;"><input type="checkbox" id="check1" class="checkbox" value="Мужской">Мужской</label>
+                        <label style="font-size: 0.9em;"><input type="checkbox" id="check2" class="checkbox" value="Женский">Женский</label>
+                    </div>
+                </section>
+                <section class="buttons">
+                    <label><input type="button" id="butt"  value="Заказать"></label>
+                    <label><input type="reset" id="butt1" value="Сброс"></label>
+                </section>
+            </div>
+        </form>
+        <footer id="footer"></footer>
+            <script>
+                const img = document.querySelectorAll('img');
+
+                let text=document.querySelector('#text');
+
+                text.style.opacity=0;
+
+                const otherImg = document.querySelector('#img4');
+
+                img[0].addEventListener(
+                    'mouseover',
+                    function(){
+                        text.style.opacity=1;
+                    }
+                )
+
+                 img[1].addEventListener(
+                    'click',
+                    function(){
+                        img[1].style.border="10px solid red";
+                    }
+                    )
+
+                img[2].addEventListener(
+                    'mouseover',
+                    function(){
+                        img[2].src = 'папка для фото/4.jpg';
+                    }
+                )
+                img[2].addEventListener(
+                    'mouseout',
+                    function(){
+                        img[2].src = 'папка для фото/3.jpg';
+                    }
+                )
+                document.getElementById("butt").addEventListener(
+                    'click',
+                    function(){
+                    let val = document.getElementById('fam').value;
+                    let val1 = document.getElementById('im').value;
+                    let val2 = document.getElementById('str').value;
+                    let check = document.querySelectorAll('.checkbox');
+
+                    for(let i=0; i<check.length; i++)
+                    {
+                        if(check[i].checked)
+                        {
+                            let checkkk = check[i].value;
+                            document.getElementById('footer').innerHTML="Фамилия: "+val+";   Имя: "+val1+";   Страна проживания: "+val2+";   Пол: "+checkkk;
+                        }
+                    }
+                })
+                
+            </script>
+            
+        </body>
+</html>

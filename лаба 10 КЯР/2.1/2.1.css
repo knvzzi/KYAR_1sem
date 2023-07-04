@@ -1,0 +1,177 @@
+
+.container, .container1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    align-items: stretch;
+    justify-content: center;
+}
+.container>div{
+    border: 2px solid;
+    min-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 20px 0 20px;
+    margin-bottom: 20px;
+}
+.div,.div1,.div2,.div3 {
+    order: 1;
+    align-self: stretch;
+    flex-basis: 30%;
+    background-color: #d6d6ff;
+}
+.container1{
+    margin-top: 20px;
+}
+.container1>div{
+    border: 2px solid;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 20px 0 20px;
+}
+.div{
+    flex-grow: 2;
+}
+.div1{
+    flex-grow: 1;
+    min-height: 600px;
+    
+}
+.div2{
+    flex-grow: 1.75;
+    min-height: 600px;
+
+}
+.div2>p{
+    text-align: left;
+    padding: 0 20px 0 20px;
+}
+.div3{
+    flex-grow: 1;
+    min-height: 600px;
+}
+
+audio{
+    padding-top: px;
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    display: block;
+}
+video{ 
+    width: 300px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    display: block;
+}
+.div3>p{
+    text-align: left;
+    margin-bottom: -15px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+/*задание2*/
+/*span{
+    color: rgba(242, 242, 242, 0);   
+}
+@media screen and (max-width: 676px){
+    
+
+    .container1 >div{
+       margin-bottom: 20px;
+    }
+    span{
+        color: black;
+        margin-left: 15px;
+        top: 30px;
+        font-family: 'Roboto', Helvetica;
+    }
+    nav:focus > .container1{
+        display: block;
+    }
+    nav .container1{
+        display: none;
+    }
+}*/
+/*pfff*/
+
+#menu-mobile {
+    display: none;
+}
+.main-menu {
+display: none;
+padding: 0;
+margin: 0;
+}
+.main-menu li {
+font-size: 16px;
+font-weight: 700;
+display: block;
+width: 100%;
+}
+.main-menu a {
+display: block;
+border-bottom: 1px solid #7171f5;
+color: #7171f5;
+padding: .5em;
+text-decoration: none;
+}
+.toggle-button {
+text-align: center;
+display: block;
+cursor: pointer;
+font-size: 20px;
+font-weight: 700;
+padding: 2%;
+background-color: #7171f5;
+color: #fff;
+width: 100%;
+}
+#menu-mobile:checked + nav .main-menu {
+display: block;
+}
+
+@media screen and (min-width: 560px) {
+    .toggle-button {
+    display: none;
+    }
+    .main-menu {
+    display: block;
+    margin: 20px; 
+    background-color: #7171f5;
+    height: 60px;
+    }
+    .main-menu li {
+    width: calc(100% / 10);
+    text-align: center;
+    display: inline-block;
+    padding-top: 10px;
+    }
+    .main-menu a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #7171f5;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    border-bottom: 0;
+    }
+}  
+@media screen and (max-width: 560px)  { 
+    .container{
+        display: none;
+    }
+    .container1 >div{
+        margin-bottom: 20px;
+    }
+}
+header{
+    margin-bottom: 30px;
+}
+span{
+    margin-left:300px ;
+}
+

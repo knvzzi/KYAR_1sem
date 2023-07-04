@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+        .grid {
+            display:grid;
+            grid-template-areas: 
+            "a b b"
+            "a c d"
+            "e e e";
+            grid-template-columns: 80px 450px 150px;
+			grid-template-rows: 150px 340px 90px;
+			grid-gap: 8px;
+            margin-left: 270px;
+            }
+        div[style*="grid-area"]{
+            background-color: rgb(226, 248, 192);
+            text-align: justify;
+            font-size: 20px;
+        }
+        .nav ul {
+            margin:0;
+            padding:0;
+            list-style-type:none;
+        }
+        .nav>ul>li {
+            float:left;
+            width:77px;
+            position: relative;
+        }
+        .nav li .tr {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -1px;
+        }
+        .nav li:hover .tr{
+            display: block;
+        }
+        .nav li a {
+            display: block;
+            background: #d2f08c;
+            border: 1px solid black;
+            padding: 3px;
+            text-decoration: none;
+            color:black;
+        }
+        li{
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .nav li li {
+            width: 79px;
+        }
+        .one{
+            background-color: rgb(167, 190, 91);
+            border: 1px solid black;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div style="grid-area: a;">
+                <nav class="nav">
+                    <ul>
+                        <li class="one">
+                            Меню
+                            <ul class="tr">
+                                <li class="two"><a href="https://www.wisdomweb.ru/CSS3/#:~:text=CSS3%20-%20это%20новый%20стандарт,счет%20использования%20новых%20свойств%20оформления">CSS3</a></li>
+                                <li class="two"><a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML</a></li>
+                                <li class="two"><a href="https://medium.com/@stasonmars/вёрстка-на-grid-в-css-полное-руководство-и-справочник-220508316f8b">Grid-верстка</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div style="grid-area: b;">
+                Для выравнивания содержимого используется justify-self по 
+                горизонтали или align-self по вертикали.
+            </div>
+            <div style="grid-area: c;">
+                Чтобы объединить ячейки сетки используются свойства 
+                grid-column-start(grid-column-end) и grid-rowstart(grid-row-end), 
+                значениями которых указывается номер линии сетки
+            </div>
+            <div style="grid-area: d;">
+                Чтобы установить промежутки пробелов между колонками или строками используются 
+                свойства grid-column-rap и grid-row-rap.
+            </div>
+            <div style="grid-area: e;">
+                Свойства grid-template-columns и grid-template-rows устанавливают размер 
+                каждой колонки и каждой строки сетки.
+            </div>
+        </div>
+    </body>
+</html>

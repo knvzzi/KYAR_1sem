@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<head>
+   
+
+    <link rel="stylesheet" href="2.1.css"> 
+    
+    <meta charset ="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+<title>flex</title>
+</head>
+<body>
+    <!--<section>
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li class="zag"><a>FLEX-BOX вёрстка <spap class="burger-menu">&#8801</spap></a>
+                    <ul class="second">
+                        <li>
+                            <video controls="controls">
+                                <source src="video/vid1.mp4" type="video/mp4">
+                            </video>
+                            <video controls="controls">
+                                <source src="video/vid2.mp4" type="video/mp4">
+                            </video>
+                            <video controls="controls">
+                                <source src="video/vid3.mp4" type="video/mp4">
+                            </video>
+                        </li>
+                        <li>
+                        <a>Распространенным способом управления позиционированием и размером flex-элементов является использование width или flex-basic; если мы установим для четвертого элемента width 100%, он будет расположен в отдельной строке. Но что, если мы не хотим или не можем установить ширину отдельных элементов? Или есть ли способ просто указать flexbox разрыв строки в определенных точках?
+
+                                Нет никакого свойства, которое мы могли бы установить для flex, чтобы оно переносило элементы на новую строку, но мы можем вставить перенос строки (вы можете представить это, как br) между двумя flex-элементами для достижения чего-то похожего:
+                                Использование элемента для перехода к новой строке flexbox дает интересный эффект: мы можем пропустить указание ширины любого элемента в макете и полностью полагаться на разрывы строк для определения потока сетки.
+
+                                Давайте начнем с простого примера. Скажем, у нас есть два элемента, отображаемые рядом (они будут растягиваться с помощью flex-grow: 1, и для них не определены ни width, ни flex-basis):</a></li>
+                        <li>
+                            <audio controls="controls">
+                            <source src="was wollen.mp3" type="audio/mpeg">
+                            </audio>
+                            <a>1. Was wollen wir drinken</a>
+                            <audio controls="controls">
+                            <source src="Sonne.mp3" type="audio/mpeg">
+                            </audio>
+                            <a>2. Sonne - Rammstein</a>
+                            <audio controls="controls">
+                            <source src="Helena.mp3" type="audio/mpeg">
+                            </audio>
+                            <a>3. Helena - My Chemical Romance</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>-->
+<header>
+    <input type="checkbox" id="menu-mobile" />
+    <nav role="navigation">
+        <!-- навигация -->
+        <label for="menu-mobile" class="toggle-button" onclick>Меню<span>&#8801</span></label>
+        <ul class="main-menu">
+            <!-- пункты меню -->
+            <li><a href="#id1">Видео</a></li>
+            <li><a href="#id2">Текст</a></li>
+            <li><a href="#id3">Музыка</a></li>
+           
+        </ul>
+    </nav>
+</header>
+<nav class="nav">
+<div class="container">
+    
+    <div class="div">Использование Flexbox-верстки
+       
+    </div>
+    </div>
+
+<div  class="container1">
+    <div class="div1" id="id1">
+        <video controls="controls">
+            <source src="video/vid1.mp4">
+        </video >
+        <video controls="controls">
+            <source src="video/vid2.mp4">
+        </video>
+        <video controls="controls">
+            <source src="video/vid3.mp4">
+        </video>
+    </div>
+    <div class="div2" id="id2">
+        
+        <p> Создание CSS разметки с помощью Flexbox начинается с установки необходимому HTML элементу CSS-свойства display со значением flex или flex-inline. 
+            После этого данный элемент становится flex-контейнером, а все его непосредственные дочерние элементы – flex-элементами. При этом когда мы говорим 
+            о flexbox то подразумеваем под этим только элемент с display:flex или display:flex-inline и все элементы непосредственно расположенные в нём. 
+            Таким образом в CSS Flexbox имеется всего два типа элементов: flex-контейнер и flex-элемент.</p>
+    </div>
+    <div class="div3">
+        <p>Lana Del Rey - Cola</p>
+        <audio controls>
+            <source src="video/Lana Del Rey - Cola.mp3">Lana Del Rey - Cola    
+        </audio>
+        <p>Lana Del Rey - Doin' Time</p>
+        <audio controls>
+            <source src="video/Lana Del Rey - Doin' Time.mp3">   
+        </audio>
+        <p>Lana Del Rey - Summertime Sadness</p>
+        <audio controls>
+            <source src="video/Lana Del Rey - Summertime Sadness.mp3">   
+        </audio>
+    </div>
+</nav>
+</div>   
+
+</body>
+</html>

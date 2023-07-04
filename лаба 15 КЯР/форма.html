@@ -1,0 +1,38 @@
+<html>
+    <body>
+    <div class="form">
+        <H1>Заполните анкету</H1>
+        <form>
+            <lable><input type="text" class="text" id="name"></lable>
+            <lable><input type="text" class="text" id="name" value="фамилия"></lable>
+            <lable><input type="text" class="text" id="name" value="адрес"></lable>
+            <label>
+                <input type="radio" name="" value="OK"> Доставить на точку
+            </label>
+            <BR>
+            <label>
+                <input type="radio" name="" value="1"> Доставить на дом
+            </label>
+            <div class="box">
+                <label><input type="checkbox" class="checkbox" value="checkbox 1" >оплата наличными</label>
+                <label><input type="checkbox" class="checkbox" value="checkbox 2" >оплата картой</label>
+                <label><input type="checkbox" class="checkbox" value="checkbox 3" >оплата через ЕРИП</label>
+                </div>
+                <p>Добавьте комментарий</p>
+                <lable><input type="text" class="text"></lable>
+                <div class="knopki">
+                <label><input type="button" id="butt"  value="подтвердить"></label>
+                <label><input type="reset" value="сброс"></label>
+                </div>
+            </form>
+    <script>
+       document.getElementById("butt").addEventListener(
+                    'click',
+                    function(){
+                    var val = document.getElementById('name').value;
+                    document.getElementById('footer').innerHTML="Фамилия "+val;
+                })
+    </script>
+    </div>
+    <footer id="footer"></footer>
+    </body></html>

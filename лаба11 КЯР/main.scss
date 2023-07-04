@@ -1,0 +1,55 @@
+$green:rgb(226, 248, 192);
+.grid {
+    display:grid;
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "e c"
+    "d d";
+    grid-template-columns: 2fr 1fr;
+	grid-template-rows: 80px 250px 190px 40px;
+	grid-gap: 10px;
+    // grid-template-columns: 2fr 1fr;
+	// grid-template-rows:  70% 40% 15%;
+	// grid-gap: 10px;
+    }
+div[style*="grid-area"]{
+    // background-color: $green;
+    border: 1px solid black;
+    text-align: justify;
+    font-size: 20px;
+}
+.a{
+    background-image: url(камни.jpg);
+}
+.img1{
+    width: 150px;
+    height: 55px;
+    margin: 10px ;
+}
+//nav
+.nav{
+    display: flex;
+    width: 1000px;
+}
+ul{ 
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    height: 80px;
+    top:10px;
+}
+li{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+.one{
+    background-color: yellow;
+}
+.two{
+    background-color: rgb(255, 183, 0);
+}
+a{
+    text-decoration: none;
+}

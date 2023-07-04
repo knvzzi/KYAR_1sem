@@ -1,0 +1,357 @@
+div{
+    display: inline-block;
+    margin: 30px;
+}
+img{
+    width: 220px;
+    height: 140px;
+}
+.one:hover{
+    transform: scale(0.5);
+}
+.two:hover{
+    transform: rotate(45deg);
+}
+.three:hover{
+    transform: translate(50px);
+}
+.four:hover{
+    transform: skew(20deg);
+}
+.five{
+    transform-style: preserve-3d;
+    transform: perspective(300px) rotateX(30deg);
+}
+.six{
+    transform-style: preserve-3d;
+    transform: perspective(300px) rotateY(30deg);
+}
+.seven{
+    transform-style: preserve-3d;
+    transform: perspective(300px) rotateX(-30deg);
+}
+.eight{
+    transform-style: preserve-3d;
+    transform: perspective(300px) rotateY(-30deg);
+}
+button{
+    display: inline-block;
+    margin: 15px;
+    width: 100px;
+    height: 30px;
+}
+.but1:hover{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+.but2:hover{
+    background-color: rgb(255, 255, 255);
+    border: 3px solid red;
+    outline: 3px solid yellow;
+}
+.but3:hover{
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    background-color: rgb(255, 255, 255);
+    border-left: none;
+    border-right: none;
+}
+.but4:hover{
+    border-right: 3px solid blue;
+    border-left: 3px solid blue;
+    background-color: rgb(255, 255, 255);
+    border-top: none;
+    border-bottom: none;
+}
+.but5:hover{
+    background-color: rgb(255, 255, 255);
+    border: hidden;
+    background-image: radial-gradient(yellow, yellow 10%, rgb(251, 0, 255) 35%, rgb(0, 225, 255) 90%)
+}
+
+/*Задание 4*/
+/*#two, #three, #four{
+    
+    margin-left: -200px;
+}*/
+#one {
+    display: inline-block;
+
+    animation: img1 3s linear 1;
+    animation-fill-mode: forwards;
+
+    transform-style: preserve-3d;
+    transform:perspective(300px) rotateY(40deg);
+    position: relative;
+}
+@keyframes img1{
+    0%{
+        left: 0;
+    }
+    50%{
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        left:0;
+    }   
+    100%{
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+    }
+}
+#two {
+    display: inline-block;
+
+    animation: img2 3s linear 1;
+    animation-fill-mode: forwards;
+
+    transform-style: preserve-3d;
+    transform:perspective(300px) rotateY(40deg);
+    position: relative;
+}
+@keyframes img2{
+    0%{
+        margin-left: -200px;
+        left: 0;
+    }
+    50%{
+        margin-left: -200px;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        left:0;
+    }   
+    100%{
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        filter: blur(10px);
+    }
+}
+#three {
+    display: inline-block;
+
+    animation: img3 3s linear 1;
+    animation-fill-mode: forwards;
+
+    transform-style: preserve-3d;
+    transform:perspective(300px) rotateY(40deg);
+    position: relative;
+}
+@keyframes img3{
+    0%{
+        margin-left: -200px;
+        left: 0;
+    }
+    50%{
+        margin-left: -200px;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        left:0;
+    }   
+    100%{
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        filter:grayscale(1);
+    }
+}
+#four {
+    display: inline-block;
+    
+    animation: img4 3s linear 1;
+    animation-fill-mode: forwards;
+
+    transform-style: preserve-3d;
+    transform:perspective(300px) rotateY(40deg);
+    position: relative;
+}
+@keyframes img4{
+    0%{
+        margin-left: -200px;
+        left: 0;
+    }
+    50%{
+        margin-left: -200px;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        left:0;
+    }   
+    100%{
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        filter:invert(1);
+    }
+}
+/*Задание 6*/
+.one11{
+    display: block;
+    width: 250px;
+    height: 170px;
+
+    animation: img11 1s linear infinite;
+    animation-direction: alternate;
+    position: relative;
+
+}
+@keyframes img11{
+    0%{
+        left: 0;
+    }
+    100%{
+       left:200px;
+    }
+}
+.one12{
+    display: block;
+    width: 250px;
+    height: 170px;
+
+    animation: img12 1s linear infinite;
+    animation-direction: alternate;
+    position: relative;
+
+}
+@keyframes img12{
+    0%{
+        left: 0;
+    }
+    50%{
+        left:100px;
+        border-radius: 80px;
+    }
+    100%{
+       left:200px;
+    }
+}
+.one13{
+    display: block;
+    width: 250px;
+    height: 170px;
+
+    animation: img13 4s linear infinite;
+    
+    position: relative;
+
+}
+@keyframes img13{
+    0%{
+        left: -900px;
+    }
+    100%{
+       left:800px;
+    }
+}
+.one14{
+    display: block;
+    width: 250px;
+    height: 170px;
+
+    animation: img14 1s linear infinite;
+    animation-direction: alternate;
+    position: relative;
+
+}
+@keyframes img14{
+    0%{
+        top: 0;
+    }
+    100%{
+        top:50px;
+    }
+}
+.one15{
+    display: block;
+    width: 250px;
+    height: 170px;
+
+    animation: img15 4s linear infinite;
+    
+    position: relative;
+
+}
+@keyframes img15{
+    0%{
+        left: 0;
+        top:0;
+    }
+    25%{
+        left:0px; 
+        top:50px;
+    }
+    50%{
+        left:50px;
+        top:50px
+    }
+    75%{
+       left:50px;
+       top:0px;
+    }
+    100%{
+       left:0px;
+       top:0px;
+    }
+}
+/*Задание 7*/
+.div{
+    width: 300px;
+    height: 300px;
+    text-align: justify;
+    font-size: medium;
+
+    animation: div 5s linear infinite;
+    
+    position: relative;
+}
+@keyframes div{
+    0%{background-color: rgb(167, 42, 42);}
+    20%{background-color: rgb(165, 161, 42);}
+    40%{background-color: rgb(99, 165, 42);}
+    60%{background-color: rgb(42, 165, 144);}
+    80%{background-color: rgb(42, 42, 165);}
+    100%{background-color: rgb(165, 42, 142);}
+}
+/*Задание 8*/
+h1{
+    animation: h1 5s infinite;
+}
+@keyframes h1
+{
+   0% { opacity: 0;}
+   50% { opacity: 0.8;}
+   100% { opacity: 0;}
+}
+/*Задание 5*/
+.bgi{
+    border: 2px solid black;
+    width: 700px;
+    height: 400px;
+    background-image: url('папка для фото/6.jpg');
+    animation: bgi 5s linear infinite;
+    
+
+    position: relative;
+}
+@keyframes bgi
+{
+   0% { 
+    background-image: url('папка для фото/1.jpg');
+    
+    
+}
+   25% { 
+    background-image: url('папка для фото/2.jpg');
+    
+    
+}
+   50% { 
+    background-image: url('папка для фото/3.jpg');
+    
+}
+    75% { 
+    background-image: url('папка для фото/4.jpg');
+ 
+}
+    100% { 
+    background-image: url('папка для фото/5.jpg');
+ 
+}
+}
+
+

@@ -1,0 +1,18 @@
+@function text_size(){
+    @return 130%;
+}
+@function hover($i, $green, $other_green){
+    @if($i == 1){
+        @return $green;
+    }
+    @else{
+        @return $other_green;
+    }
+}
+@for $i from 1 through 4{
+    .a-#{$i}{
+       &:hover{
+        color: hover($i, $green, $other_green);
+       }
+    }
+}

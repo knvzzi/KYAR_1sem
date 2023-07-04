@@ -1,0 +1,23 @@
+@import 'nav.scss';
+@import 'mixins.scss';
+@import 'funk.scss';
+@import 'text.scss';
+@import 'form.scss';
+
+.container-1{
+    @include flex;
+}
+.container-1 {
+    height: 15%;
+    margin-bottom: 20px;
+}
+.zag{
+   
+   flex-grow: 3;
+   font-size: 20px;
+   background-color: rgb(177, 192, 187);
+   vertical-align: middle;
+}
+p, label, h2, h4{
+    color:rgb(83, 91, 88);
+}

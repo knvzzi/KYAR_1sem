@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="forXML.css"?>
+<!DOCTYPE musics [
+<!ELEMENT musics (head, music, nauthor, author, title, ntitle )>
+<!ELEMENT head (#PCDATA)>
+<!ELEMENT music (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT nauthor (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT ntitle (#PCDATA)>
+<!ENTITY author "Композитор">
+<!ENTITY title "Название произведения">
+]>
+<musics>
+    <head>
+        <nauthor>&author;</nauthor>
+        <ntitle>&title;</ntitle>
+    </head>
+    <music>
+        <author>Людвиг ван Бетховен</author>
+        <title>Симфония №5 до минор, соч. 67</title>
+    </music>
+    <music>
+        <author>Рихард Вагнер</author>
+        <title>Валькирия:Полет валькирий</title>
+    </music>
+    <music>
+        <author>Сэмюэл Барбер</author>
+        <title>Адажио для струнных</title>
+    </music>
+</musics>

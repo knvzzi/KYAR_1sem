@@ -1,0 +1,214 @@
+@mixin flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+@mixin flex2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+%border{
+    border: 1px solid rgb(207, 205, 196);
+}
+@mixin asid-color($flex-basis){
+    @if($flex-basis > 10%)
+    {
+        background-color:rgba(177, 192, 187, 0.333);
+    }
+    @else{
+        background-color:black;
+    }
+}
+$value: text_size();
+$green:green;
+$other_green:rgb(87, 145, 87);
+
+@function text_size(){
+    @return 130%;
+}
+@function hover($i, $green, $other_green){
+    @if($i == 1){
+        @return $green;
+    }
+    @else{
+        @return $other_green;
+    }
+}
+@for $i from 1 through 4{
+    .a-#{$i}{
+       &:hover{
+        color: hover($i, $green, $other_green);
+       }
+    }
+}
+
+//main
+
+.container-1{
+    @include flex;
+}
+.container-1 {
+    height: 15%;
+    margin-bottom: 20px;
+}
+.zag{
+   
+   flex-grow: 3;
+   font-size: 20px;
+   background-color: rgb(177, 192, 187);
+   vertical-align: middle;
+}
+p, label, h2, h4{
+    color:rgb(83, 91, 88);
+}
+//nav
+label{
+    align-self: center;
+    img{
+        width: 70px;
+        height: 70px;
+        vertical-align: middle;
+    }
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    display: flex;
+       li{
+        list-style-type: none;
+        padding: 10px;
+        margin-left: 25px ;
+        font-size: 110%;
+        a{
+            text-decoration: none;
+            color:rgb(42, 47, 46);
+            padding-top:10px;
+            padding-bottom: 10px;
+        }
+        // a:hover
+        // {
+        //     color:rgb(52, 112, 52);
+        // }
+    }
+}
+
+
+//for text-part
+
+.container-2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.text_part{
+    @include flex;
+    flex-basis: 68%;
+    float:left;
+    h2 {
+        @include asid-color(30%);
+        flex: 1 1 100%;
+        
+        margin: 0;
+        box-sizing: border-box;
+        padding-top: 7px;
+        height: 40px;
+        text-align: center;
+        font-size: text_size();
+    }
+    p {
+        background-color: rgb(250, 246, 240);
+        flex-basis: 30%;
+        @extend %border;
+        font-size: text_size() - 30%;
+    }
+}
+
+.text_part figure{
+    flex-basis: 10%;
+    margin: 0;
+    margin-top: 20px;
+    img {
+        width: 180px;
+        height: 110px;
+    }
+}
+
+footer{
+    display: flex;
+    flex: 1 1 100%;
+    margin-top: 20px;
+    @include asid-color(30%);
+    h4{
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+
+
+//for form
+
+form section{
+    padding: 10px;
+    .UserInput{
+        float:right;
+    }
+}
+aside {
+    flex-basis:30%;
+    // @include asid-color(30%);
+    h2{
+        @include asid-color(30%);
+        text-align: center;
+        font-size: text_size();
+        box-sizing: border-box;
+        padding-top: 7px;
+        height: 40px;
+    }
+    
+}
+.aside{
+    @include flex;
+    p{
+        flex-basis: 50%;
+        background-color: rgb(250, 246, 240);
+        @extend %border;
+    }
+    figure{
+        margin: 0;
+        margin-top: 20px;
+    }
+    img{   
+        width: 150px;
+        height: 100px;
+    }
+}
+form{
+    background-color: rgb(250, 246, 240);
+    @extend %border;
+}
+
+
+@media screen and (max-width: 560px)
+{
+    .container-1,main{
+        @include flex2;
+    }
+    ul{
+        display: inline-block;
+    }
+    .nav label img{
+        width: 120px;
+        height: 120px;
+    }
+}
